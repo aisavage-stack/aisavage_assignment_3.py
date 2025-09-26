@@ -1,0 +1,22 @@
+print("Choose your course difficulty:")
+print("A) Light (12 credits)")  
+print("B) Normal (15 credits)")
+print("C) Heavy (18 credits)")
+
+choice = input()
+
+if choice=="A" and current_gpa>=2.0:
+    stress_level=stress_level-20
+    print("You have chosen course difficulty A.")
+    print(f"Your stress level will now be: {stress_level}")
+elif choice=="B" and current_gpa>=3.0:
+    print("Your stress level will be the same.")
+    print("You have chosen course difficulty B.")
+elif choice=="C" and current_gpa>=3.5:
+    stress_level= stress_level+20
+    print(f"Your stress level will now be: {stress_level}")
+    print("You have chosen course difficulty C.")
+else:
+    print("Invalid.")
+
+
