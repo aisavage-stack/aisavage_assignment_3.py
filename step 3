@@ -1,0 +1,19 @@
+study_options=["Programming", "Math", "English", "History"]
+
+study_choice= input() #choose all, programing and math/ english and history, or only one
+
+if study_choice not in study_options:
+    print("Invalid")
+if study_choice =="Programming" and "Math" and "English" and "History":
+    current_gpa==current_gpa+0.6
+    social_points==social_points-20
+    print(f"Your will now have {social_points} social points and your GPA will be {current_gpa}.")
+elif study_choice=="Programming" and "Math" or "English" and "History":
+    current_gpa==current_gpa+0.4
+    social_points==social_points-10
+    print(f"You will now have {social_points} social points and your GPA will be {current_gpa}")
+elif study_choice=="Programming" or "Math" or "English" or "History":
+    current_gpa==current_gpa+0.2
+    print(f"You will have the same amount of social points and your GPA will be {current_gpa}.")
+else:
+    print("Invalid")
