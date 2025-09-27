@@ -1,0 +1,26 @@
+take_break= True #True or False
+break_in_minutes= 10
+if take_break is True:
+    if break_in_minutes>5:
+        stress_level==stress_level-30
+        current_gpa==current_gpa+0.3
+        print(f"Your stress level went down! It is now {stress_level}. Your GPA increased to a {current_gpa}.")
+    else:
+        print("Your stress level didn't change.")
+if take_break is False:
+    stress_level== stress_level+10
+    current_gpa==current_gpa-0.5
+    print(f"Unfortunately, your stress went up. It is now {stress_level}. Your GPA dropped to a {current_gpa}.")
+if take_break is not True or False:
+    print("Invalid.")
+
+if current_gpa>3.0 or stress_level<40 or social>50:
+    print("Congrats! You had a good semester!")
+else:
+    print("Unfortunately, you didn't have a good semester. Better luck next time.")
+
+print("Your final stats:")
+print(f"Current GPA: {current_gpa}")
+print(f"Study Hours: {study_hours}")
+print(f"Social Points: {social_points}")
+print(f"Stress Level: {stress_level}")
